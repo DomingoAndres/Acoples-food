@@ -1,6 +1,8 @@
 package org.example
 
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.delay
+
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -39,7 +41,7 @@ fun main() = runBlocking {
     println("\nProcesando pedido...")
     var estado: EstadoPedido = EstadoPedido.EnPreparacion
     println("Estado: En Preparación")
-    //delay(3000)
+    delay(3000)
     estado = EstadoPedido.Listo
 
     //Procedemos a calcular los totales
